@@ -29,4 +29,7 @@ basic.forever(function () {
     } else {
         brightness = "bad data"
     }
+    if (light2 <= 300) {
+        music.play(music.stringPlayable("A A A A C5 B E B ", 130), music.PlaybackMode.UntilDone)
+    }
 })
